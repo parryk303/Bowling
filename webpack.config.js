@@ -1,27 +1,38 @@
-var path = require('path');
-var webpack = require('webpack');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: './client/app.js',
-    output: {
-        path: path.resolve(__dirname, 'client/build'),
-        filename: 'app.bundle.js'
-    },
-    module: {
-        loaders: [
-            {
-                test: /\.jsx?$/,
-                loader: 'babel-loader',
-                include: path.join(__dirname, '/client/'),
-                exclude: '/node_modules/',
-                query: {
-                    presets: ['es2015', 'react']
-                }
-            }
-        ]
-    },
-    stats: {
-        colors: true
-    },
-    devtool: 'source-map'
+  entry: './client/app.jsx',
+  mode: 'development',
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader"
+        }
+      },
+      {
+        test: /\.html$/,
+        use: [ {
+          loader: 'html-loader',
+          options: {
+            minimize: true
+          }
+        }]
+      }
+    ]
+  },
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'public')
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './client/index.html',
+      name: "index.html"
+    })
+  ],
+  devtool:"source-map-loader"
 };

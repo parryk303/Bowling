@@ -1,0 +1,177 @@
+body {
+  background-image: url("https://images.pexels.com/photos/9379/drinking-alley-fun-bowling-9379.jpg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  background-size: cover;
+}
+
+#pad {
+  border: solid;
+  border-radius: 10px;
+  background-color: white;
+  padding: 5px;
+  width: 90%;
+}
+
+#app {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Baloo Chettan', cursive;
+  text-align: center;
+  color:#ff00ff;
+}
+
+.score {
+  color:#ff00ff;
+  font-size: 90px;
+  font-family: 'Baloo Chettan', cursive;
+  margin-top: -30px;
+}
+
+.gamestats {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.gamestats1 {
+  border: #ccc solid 1px;
+  color: white;
+  width: 71px;
+  float: left;
+}
+
+.gamestats2 {
+  border-top: #ccc solid 1px;
+  border-right: #ccc solid 1px;
+  border-bottom: #ccc solid 1px;
+  color: white;
+  border-left: none;
+  width: 52px;
+  float: left;
+}
+
+.scoreTitle {
+  font-size: 27px;
+  margin-top: -5px;
+}
+
+.keypad {
+  width: 162px;
+  height: 212px;
+  padding-top: 10px;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 34px;
+}
+
+.keypadRow {
+  border: none;
+}
+
+.sq {
+  width: 50px;
+  height: 50px;
+  padding-top: 2px;
+  border-style: dashed;
+  border-color:#333333;
+  background-color: #aff7a2;
+  border-radius: 10px;
+  font-family: 'Baloo Chettan', cursive;
+  font-weight: bold;
+  font-size: 28px;
+  text-shadow: 2px 2px #fff;
+  color: #666;
+  float:left;
+  text-align: center;
+  margin: 2px;
+}
+
+.non{
+  width: 50px;
+  height: 50px;
+  padding-top: 2px;
+  background-color: #fff;
+  border-radius: 10px;
+  float:left;
+  margin: 2px;
+}
+
+.sq:hover {
+  border-color:#ff00ff;
+}
+
+.sq:active{
+  transform: scale(0.85);
+}
+
+.random {
+  width: 190px;
+  height: 48px;
+  padding-top: 3px;
+  border-style: dashed;
+  border-color:#333333;
+  background-color: #aff7a2;
+  border-radius: 20px;
+  font-family: 'Baloo Chettan', cursive;
+  font-weight: bold;
+  font-size: 24px;
+  text-shadow: 2px 2px #fff;
+  color: #666;
+  text-align: center;
+  margin: 2px;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+.random:hover {
+  border-color:#ff00ff;
+}
+
+.random:active {
+  transform: scale(0.85);
+}
+
+.replay {
+  cursor: pointer;
+}
+
+.replay:hover {
+  color:#ff00ff;
+}
+
+.replay:active {
+  transform: scale(0.85);
+  color:#000;
+}
+
+.col {
+  float: left;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.innercontainer {
+  display: inline-block;
+}
+
+.scoreslist {
+  margin-left:50px;
+  margin-top: 26px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  border: dashed 1px #ccc;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+li {
+  list-style-type:none;
+  font-size: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: normal;
+}
+
+ul {
+  padding-top: 7px;
+  padding-left: 0;
+}
